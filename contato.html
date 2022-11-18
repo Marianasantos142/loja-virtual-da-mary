@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/styler.css">
+</head>
+
+<body class="body">
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contrainer">
+        <h1>Entre em contato conosco!</h1>
+    </div>
+    
+
+<div class="contrainer">
+    <div class="p-20">
+        <form class="form-flex">
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" onkeyup="validaNome()"><br><br>
+            <div class="mb-10 text-red" id="erroNome"></div>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" onkeyup="validaEmail()"><br><br>
+            <div class="mb-10 text-red" id="erroEmail"></div>
+
+
+            <label for="assunto">Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="8" rows="6" onkeyup="validaAssunto()"></textarea><br><br>
+            <div class="mb-10 text-red" id="erroAssunto"></div>
+            <button class="tm-btn" onclick="enviar()">Enviar</button>
+
+        </form>
+    </div>
+
+<div class="p-20">
+
+    <p>Endereço: Av. das Americas, 4666 - Barra da Tijuca, RJ, 22640-102</p>
+    <p>Rio de janeiro</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0121785316114!2d-46.70001888520392!3d-23.568006084679563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57a71a481adb%3A0xdd1bff7cec7559ae!2sSesc%20Pinheiros!5e0!3m2!1spt-BR!2sbr!4v1667913834614!5m2!1spt-BR!2sbr"
+        width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"  id="mapa" onmouseover="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+    </div>
+  </div>
+    
+  
+  
+  
+  <hr>
+    <footer class="text-center p-20">
+        Todos os direitos reservados &copy
+
+    </footer>
+
+
+
+    <script src='assets/js/script.js'></script>
+
+</body>
+
+</html>
